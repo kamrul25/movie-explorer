@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+import SearchBar from '../components/SearchBar';
+import MovieCard from '../components/MovieCard';
+import MovieModal from '../components/MovieModal';
 import { allShows, searchShows } from "../services/tvmazeApi";
 
 const MovieListingPage = () => {
@@ -31,14 +34,14 @@ const MovieListingPage = () => {
   }, [searchTerm]);
 
   return (
-    <div className="container mx-auto px-4 py-8 flex-grow">
+    <div className="container mx-auto px-4 py-8 grow">
       <h1 className="text-3xl font-bold text-center mb-2">
         Explore Movies & Shows
       </h1>
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
 
       {loading ? (
-        <div className="flex justify-center items-center min-h-[300px]">
+        <div className="flex justify-center items-center min-h-75">
           <span className="loading loading-spinner loading-lg text-primary"></span>
         </div>
       ) : shows.length === 0 ? (

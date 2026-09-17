@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className="navbar bg-base-200 border-b border-base-300 px-4 sm:px-8 sticky top-0 z-40 backdrop-blur bg-opacity-90">
       <div className="flex-1">
         <Link to="/" className="btn btn-ghost normal-case text-xl font-bold text-primary">
-          🎬 MovieExplorer
+          MovieExplorer
         </Link>
       </div>
       <div className="flex-none">
