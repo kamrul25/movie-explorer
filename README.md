@@ -22,7 +22,7 @@ A responsive, interactive web application built with **React**, **React Router D
 ---
 
 ## Project Structure
-
+```
 movie-explorer/
 ├── src/
 │   ├── components/      
